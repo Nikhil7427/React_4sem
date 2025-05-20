@@ -16,10 +16,11 @@
 // So when something changes:
 //     //react first creates an exact copy of the DOM. then react figures out ehich part is new and only updates that specific part of DOM.
 
-// IN JSX syntax,we write html tags inside javascript.
+////////// IN JSX syntax,we write html tags inside javascript.
 // int react, for example,const element = <h1>Hello!</h1>;
 
-// jsx: javascript xml
+// jsx: javascript xml is a syntax extension  to javascreipt used by react .
+// the jsx code will be translated into normal javascript
 
 class Hello extends React.Component{
     render(){
@@ -31,3 +32,14 @@ ReactDOM.render(
     <Hello toWhat="World"/>,
     document.getElementById('root')
 );
+
+// Rules for HTML:
+///1: we can not return more then one HTML element at once, but we can wrap the more component in div
+// 2: we can use jsx inside For loop,if-else cases.
+// 2: we use className on the class name. 
+
+/*PROPS */
+
+// props is being used for passing data from one component to other
+//but the important part here is that data with props are being passed in a uni directional flow(one way from parent to child).
+
