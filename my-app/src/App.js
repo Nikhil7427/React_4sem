@@ -5,7 +5,8 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     // <Header.js/>
-    <Navbar/>
+    //{ <Navbar title="TextUtils" aboutText="AboutTextUtils" searchBar={true}/>}
+    <Navbar title="TextUtils" aboutText="AboutTextUtils" searchBar={true}/>
   );
 }
 
